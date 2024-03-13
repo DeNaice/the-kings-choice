@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://duhb5b7x36e1y"
+path="res://.godot/imported/Ha ha ha.wav-738e88d38079014a9e2e9cf2d35157c6.sample"
+
+[deps]
+
+source_file="res://assets/sfx/malehuman/Ha ha ha.wav"
+dest_files=["res://.godot/imported/Ha ha ha.wav-738e88d38079014a9e2e9cf2d35157c6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

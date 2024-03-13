@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ttu5mxfcu2k0"]
+
+[ext_resource type="Script" path="res://addons/terrabrush/TerraBrush.cs" id="1_t13py"]
+
+[node name="NavMesh" type="NavigationRegion3D"]
+
+[node name="TerraBrush" type="Node3D" parent="."]
+script = ExtResource("1_t13py")
+DataPath = "res://scenes/test/NavMesh"
+metadata/_edit_lock_ = false

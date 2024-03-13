@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7d3rv71alrjk"
+path="res://.godot/imported/24 13 anxious INITIAL.mp3-2c5abf5143d052a898edaa5d64d87e61.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/24 13 anxious INITIAL.mp3"
+dest_files=["res://.godot/imported/24 13 anxious INITIAL.mp3-2c5abf5143d052a898edaa5d64d87e61.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

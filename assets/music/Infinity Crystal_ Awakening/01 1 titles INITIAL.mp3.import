@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbfyb4kdfauy0"
+path="res://.godot/imported/01 1 titles INITIAL.mp3-a7aeaf066458552d4f859298e69442d2.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/01 1 titles INITIAL.mp3"
+dest_files=["res://.godot/imported/01 1 titles INITIAL.mp3-a7aeaf066458552d4f859298e69442d2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://tcqsb042gu7w"]
+
+[ext_resource type="Texture2D" uid="uid://dvu02ajmxcqko" path="res://assets/textures/mushrooms_and_flowers_textures/Ekfs_bush_map.png" id="1_pjdfr"]
+
+[resource]
+resource_name = "Elf_bush_Map.018"
+cull_mode = 2
+albedo_texture = ExtResource("1_pjdfr")
+roughness = 0.552786

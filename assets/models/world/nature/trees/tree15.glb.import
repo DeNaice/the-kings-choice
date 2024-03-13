@@ -1,0 +1,47 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://birns5cvwwa3d"
+path="res://.godot/imported/tree15.glb-2cf509af9c2cf1e7098c23b58f15995f.scn"
+
+[deps]
+
+source_file="res://assets/models/world/nature/trees/tree15.glb"
+dest_files=["res://.godot/imported/tree15.glb-2cf509af9c2cf1e7098c23b58f15995f.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.5
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Material #26.014": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/textures/tree_textures/Material #26.tres"
+}
+},
+"nodes": {
+"PATH:Tree_temp_climate_015": {
+"generate/physics": true,
+"physics/shape_type": 2
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

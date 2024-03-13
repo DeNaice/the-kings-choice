@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bru72fch3xkh8"
+path="res://.godot/imported/JDSherbert - Ambiences Music Pack - The Blackpenny Pub.mp3-68473e91d21aa8bb7aba9497e63b5d68.mp3str"
+
+[deps]
+
+source_file="res://assets/music/bgm/JDSherbert - Ambiences Music Pack - The Blackpenny Pub.mp3"
+dest_files=["res://.godot/imported/JDSherbert - Ambiences Music Pack - The Blackpenny Pub.mp3-68473e91d21aa8bb7aba9497e63b5d68.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cw77d53lpd4bu"
+path="res://.godot/imported/29 15 game over LOOP.mp3-9202ebac7c9351fc09cb655bec784904.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/29 15 game over LOOP.mp3"
+dest_files=["res://.godot/imported/29 15 game over LOOP.mp3-9202ebac7c9351fc09cb655bec784904.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

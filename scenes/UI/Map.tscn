@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://0esg4y1bhbat"]
+
+[ext_resource type="Script" path="res://scripts/ui/Map.cs" id="1_e6wg8"]
+[ext_resource type="Texture2D" uid="uid://cnbx2vusek5g5" path="res://assets/ui/background/LonelyIsland.jpg" id="2_q550f"]
+[ext_resource type="PackedScene" uid="uid://bfwrrh24mtyaj" path="res://scenes/UI/MapNode.tscn" id="2_wylxk"]
+
+[node name="Map" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e6wg8")
+
+[node name="KartePrototyp" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(578, 341)
+scale = Vector2(0.563965, 0.474609)
+texture = ExtResource("2_q550f")
+
+[node name="MapNode" parent="." groups=["MapNodes"] instance=ExtResource("2_wylxk")]
+position = Vector2(308, 483)
+sceneName = "GloomMarket"
+destinations = Array[String](["Waldweg"])
+hasTeleporter = true
+
+[node name="MapNode2" parent="." groups=["MapNodes"] instance=ExtResource("2_wylxk")]
+position = Vector2(796, 176)
+sceneName = "Schloss"
+destinations = Array[String](["Zuhause", "Hintereingang"])
+hasTeleporter = true
+isShowingName = true
+
+[node name="MapNode3" parent="." groups=["MapNodes"] instance=ExtResource("2_wylxk")]
+position = Vector2(766, 157)
+sceneName = "Hintereingang"
+destinations = Array[String](["Schloss", "Zuhause"])
+isShowingName = true
+
+[node name="MapNode4" parent="." groups=["MapNodes"] instance=ExtResource("2_wylxk")]
+position = Vector2(730, 202)
+sceneName = "Zuhause"
+destinations = Array[String](["Hintereingang", "Schloss", "Waldweg"])
+isShowingName = true
+
+[node name="MapNode6" parent="." groups=["MapNodes"] instance=ExtResource("2_wylxk")]
+position = Vector2(419, 213)
+sceneName = "SeethingMountain"
+destinations = Array[String](["Waldweg"])
+hasTeleporter = true
+
+[node name="MapNode10" parent="." groups=["MapNodes"] instance=ExtResource("2_wylxk")]
+position = Vector2(461, 420)
+sceneName = "Waldweg"
+destinations = Array[String](["SeethingMountain", "GloomMarkt", "Zuhause"])
+isShowingName = true

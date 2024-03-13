@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dku7e0esdgbar"
+path="res://.godot/imported/07 4 town INITIAL.mp3-67a3b631d834dd6cf37925fdf47beb92.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/07 4 town INITIAL.mp3"
+dest_files=["res://.godot/imported/07 4 town INITIAL.mp3-67a3b631d834dd6cf37925fdf47beb92.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

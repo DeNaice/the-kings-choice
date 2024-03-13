@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ucen7fsi5b82"
+path="res://.godot/imported/17 9 coasting LOOP.mp3-64c190891bb043e5b8e71a18e4be0cac.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/17 9 coasting LOOP.mp3"
+dest_files=["res://.godot/imported/17 9 coasting LOOP.mp3-64c190891bb043e5b8e71a18e4be0cac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

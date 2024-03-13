@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drtweyl4f04av"
+path="res://.godot/imported/15 8 victory LOOP.mp3-03bf9a56b2c68b33b7c964c02944cfc1.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/15 8 victory LOOP.mp3"
+dest_files=["res://.godot/imported/15 8 victory LOOP.mp3-03bf9a56b2c68b33b7c964c02944cfc1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

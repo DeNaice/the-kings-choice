@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfwrrh24mtyaj"]
+
+[ext_resource type="Script" path="res://scripts/ui/MapNode.cs" id="1_ebhu7"]
+[ext_resource type="Shader" path="res://scripts/ui/MapNode.gdshader" id="2_phy7b"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_4x7u4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rx50g"]
+resource_local_to_scene = true
+shader = ExtResource("2_phy7b")
+shader_parameter/isActive = false
+
+[node name="MapNode" type="Node2D"]
+script = ExtResource("1_ebhu7")
+destinations = Array[String]([])
+
+[node name="TeleportIndicator" type="MeshInstance2D" parent="."]
+modulate = Color(0.313726, 0.411765, 0.713726, 1)
+scale = Vector2(25, 25)
+mesh = SubResource("SphereMesh_4x7u4")
+
+[node name="MapIndicator" type="MeshInstance2D" parent="."]
+modulate = Color(0.568627, 0.568627, 0.568627, 1)
+material = SubResource("ShaderMaterial_rx50g")
+scale = Vector2(20, 20)
+mesh = SubResource("SphereMesh_4x7u4")
+
+[node name="SceneName" type="Label" parent="."]
+offset_left = -35.0
+offset_top = -40.0
+offset_right = 34.0
+offset_bottom = -12.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1

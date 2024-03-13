@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqm3vicypi6ox"]
+
+[ext_resource type="Script" path="res://scripts/interactable/TravelZone.cs" id="1_tqr8g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sqkt2"]
+resource_local_to_scene = true
+size = Vector3(13.9159, 1.69336, 13.7327)
+
+[node name="TravelZone" type="Node3D" groups=["TravelZones"]]
+script = ExtResource("1_tqr8g")
+
+[node name="TravelArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TravelArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7064, 0)
+shape = SubResource("BoxShape3D_sqkt2")
+
+[node name="DetectionArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionArea"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_sqkt2")
+
+[node name="Destination" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.72897, 0)
+billboard = 1
+text = "Destination"
+
+[connection signal="body_entered" from="TravelArea" to="." method="TravelAreaEntered"]
+[connection signal="body_exited" from="TravelArea" to="." method="TravelAreaExited"]
+[connection signal="body_entered" from="DetectionArea" to="." method="DetectionAreaEntered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="DetectionAreaExited"]

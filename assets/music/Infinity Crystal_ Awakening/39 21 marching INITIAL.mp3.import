@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgtbf55j5vxu2"
+path="res://.godot/imported/39 21 marching INITIAL.mp3-50413d27779274b4d0f2fd1b16143b1e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/39 21 marching INITIAL.mp3"
+dest_files=["res://.godot/imported/39 21 marching INITIAL.mp3-50413d27779274b4d0f2fd1b16143b1e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

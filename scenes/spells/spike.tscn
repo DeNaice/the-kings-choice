@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqfixw2lgxqrb"]
+
+[ext_resource type="PackedScene" uid="uid://ngsqa74dxy77" path="res://assets/spells/spike2.glb" id="1_h5xp8"]
+[ext_resource type="Texture2D" uid="uid://d1eaijchq7go0" path="res://assets/spells/mud.png" id="2_bcwu4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1iv0v"]
+albedo_texture = ExtResource("2_bcwu4")
+
+[node name="spike2" instance=ExtResource("1_h5xp8")]
+
+[node name="spike8_4_Walec_004" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_1iv0v")

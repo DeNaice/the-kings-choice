@@ -1,0 +1,103 @@
+[gd_scene load_steps=11 format=3 uid="uid://k81ji86lh0p1"]
+
+[ext_resource type="Script" path="res://scripts/spells/Icestorm.gd" id="1_tl636"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_abex5"]
+radius = 3.0
+
+[sub_resource type="Curve" id="Curve_lr74d"]
+min_value = -2.0
+max_value = 2.0
+_data = [Vector2(0, 2), 0.0, 0.0, 0, 0, Vector2(0.492063, -2), 0.0, 0.0, 0, 0, Vector2(1, 2), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_803bd"]
+min_value = -2.0
+max_value = 2.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_m6pky"]
+min_value = -2.0
+max_value = 2.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.496032, 1.95681), 0.0, 0.0, 0, 0, Vector2(0.587301, -2), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_gdr4r"]
+curve_x = SubResource("Curve_lr74d")
+curve_y = SubResource("Curve_803bd")
+curve_z = SubResource("Curve_m6pky")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7ll7y"]
+direction = Vector3(1, 1, 1)
+spread = 120.0
+initial_velocity_min = 1.0
+initial_velocity_max = 2.0
+orbit_velocity_max = 0.4
+orbit_velocity_curve = SubResource("CurveXYZTexture_gdr4r")
+gravity = Vector3(0, 2, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v3hr1"]
+albedo_color = Color(0.545098, 0.819608, 0.972549, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_lf64x"]
+material = SubResource("StandardMaterial3D_v3hr1")
+radius = 0.01
+height = 0.01
+
+[sub_resource type="FogMaterial" id="FogMaterial_bbhbh"]
+density = 0.3
+albedo = Color(0.560784, 0.811765, 0.996078, 1)
+emission = Color(0.552941, 0.658824, 0.94902, 1)
+height_falloff = 1.10957e-05
+edge_fade = 0.0329877
+
+[node name="Icestorm" type="Node3D"]
+script = ExtResource("1_tl636")
+
+[node name="Offset" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Offset"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -5.96046e-08, -2.38419e-07, -1.19209e-07)
+shape = SubResource("SphereShape3D_abex5")
+
+[node name="Storm1" type="GPUParticles3D" parent="Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.90101, 0)
+amount = 1000
+lifetime = 3.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_7ll7y")
+draw_pass_1 = SubResource("SphereMesh_lf64x")
+
+[node name="Storm2" type="GPUParticles3D" parent="Offset"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.90101, 0)
+amount = 1000
+lifetime = 3.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_7ll7y")
+draw_pass_1 = SubResource("SphereMesh_lf64x")
+
+[node name="Storm3" type="GPUParticles3D" parent="Offset"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.90101, 0)
+amount = 1000
+lifetime = 3.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_7ll7y")
+draw_pass_1 = SubResource("SphereMesh_lf64x")
+
+[node name="Storm4" type="GPUParticles3D" parent="Offset"]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, -0.90101, 0)
+amount = 1000
+lifetime = 3.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_7ll7y")
+draw_pass_1 = SubResource("SphereMesh_lf64x")
+
+[node name="FogVolume" type="FogVolume" parent="Offset"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+shape = 0
+material = SubResource("FogMaterial_bbhbh")
+
+[connection signal="body_entered" from="Offset" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Offset" to="." method="_on_offset_body_exited"]

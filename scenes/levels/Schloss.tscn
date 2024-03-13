@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://br0gkleen1kqh"]
+
+[ext_resource type="Script" path="res://scripts/levels/Schloss.cs" id="1_4ewn5"]
+[ext_resource type="PackedScene" uid="uid://bqm3vicypi6ox" path="res://scenes/interactable/TravelZone.tscn" id="2_my25h"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h22wx"]
+size = Vector3(100, 2, 100)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_m0pwd"]
+data = PackedVector3Array(-50, 1, 50, 50, 1, 50, -50, -1, 50, 50, 1, 50, 50, -1, 50, -50, -1, 50, 50, 1, -50, -50, 1, -50, 50, -1, -50, -50, 1, -50, -50, -1, -50, 50, -1, -50, 50, 1, 50, 50, 1, -50, 50, -1, 50, 50, 1, -50, 50, -1, -50, 50, -1, 50, -50, 1, -50, -50, 1, 50, -50, -1, -50, -50, 1, 50, -50, -1, 50, -50, -1, -50, 50, 1, 50, -50, 1, 50, 50, 1, -50, -50, 1, 50, -50, 1, -50, 50, 1, -50, -50, -1, 50, 50, -1, 50, -50, -1, -50, 50, -1, 50, 50, -1, -50, -50, -1, -50)
+
+[node name="Schloss" type="Node3D"]
+script = ExtResource("1_4ewn5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_h22wx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_m0pwd")
+
+[node name="TravelZone" parent="." instance=ExtResource("2_my25h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.9079, 3.60414, 27.9854)
+destination = "Zuhause"
+departure = "Schloss"
+
+[node name="TravelZone2" parent="." instance=ExtResource("2_my25h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.9528, 3.60414, -32.1203)
+destination = "Hintereingang"
+departure = "Schloss"

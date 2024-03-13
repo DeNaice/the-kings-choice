@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://y6v7j5xla5x3"]
+
+[ext_resource type="Script" path="res://scripts/ui/Credits.cs" id="1_0x87j"]
+[ext_resource type="Texture2D" uid="uid://dslmvm3ed3oon" path="res://assets/ui/background/6338223_3226135.jpg" id="2_ch0y8"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_0x87j")
+
+[node name="63382233226135" type="Sprite2D" parent="."]
+position = Vector2(570, 321)
+scale = Vector2(0.389032, 0.35181)
+texture = ExtResource("2_ch0y8")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_vertical = 4
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 334.0
+offset_top = 55.0
+offset_right = 867.0
+offset_bottom = 575.0
+theme_override_font_sizes/normal_font_size = 29
+text = "Credits: 
+
+Anastasia Tierbach
+
+Felix Karow
+
+Jan Georg Detlef Reinhard Kleffmann
+
+Till Jonas Furco
+
+Dennis Krs 
+
+<3"
+fit_content = true
+scroll_active = false
+
+[node name="Zurueck" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 617.0
+offset_right = 1156.0
+offset_bottom = 648.0
+text = "Klick hier um ins Hauptmenü zu kommen"
+
+[connection signal="pressed" from="Zurueck" to="." method="OnZurueck"]

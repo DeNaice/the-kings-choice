@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4f8quamoi8s5"]
+
+[ext_resource type="Script" path="res://scripts/ui/MainMenu.cs" id="1_fctie"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_fctie")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Neues Spiel" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Neues Spiel"
+
+[node name="Spiel Laden" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Spiel Laden"
+
+[node name="Testlevel" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Testlevel"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Credits
+"
+
+[node name="Optionen" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Optionen"
+
+[node name="Spiel verlassen" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Spiel verlassen"
+
+[connection signal="pressed" from="VBoxContainer/Neues Spiel" to="." method="OnNeuesSpiel"]
+[connection signal="pressed" from="VBoxContainer/Spiel Laden" to="." method="OnSpielLaden"]
+[connection signal="pressed" from="VBoxContainer/Testlevel" to="." method="OnTestLevel"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="OnCredits"]
+[connection signal="pressed" from="VBoxContainer/Optionen" to="." method="OnOptionen"]
+[connection signal="pressed" from="VBoxContainer/Spiel verlassen" to="." method="OnSpielVerlassen"]

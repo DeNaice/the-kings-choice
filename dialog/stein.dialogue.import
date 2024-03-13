@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bi515cr2pcvgh"
+path="res://.godot/imported/stein.dialogue-f46535f660c7ef5e786126fe9e7b6f33.tres"
+
+[deps]
+
+source_file="res://dialog/stein.dialogue"
+dest_files=["res://.godot/imported/stein.dialogue-f46535f660c7ef5e786126fe9e7b6f33.tres"]
+
+[params]
+
+defaults=true

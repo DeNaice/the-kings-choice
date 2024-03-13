@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d3jqjmyi2ilj0"
+path="res://.godot/imported/Uh huh_positive.wav-e230b885d169e8afa771de30ebac93b9.sample"
+
+[deps]
+
+source_file="res://assets/sfx/malehuman/Uh huh_positive.wav"
+dest_files=["res://.godot/imported/Uh huh_positive.wav-e230b885d169e8afa771de30ebac93b9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

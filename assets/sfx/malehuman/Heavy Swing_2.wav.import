@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lrn8bde0dit"
+path="res://.godot/imported/Heavy Swing_2.wav-be066e7bcbdce024acbbd9f172a2682a.sample"
+
+[deps]
+
+source_file="res://assets/sfx/malehuman/Heavy Swing_2.wav"
+dest_files=["res://.godot/imported/Heavy Swing_2.wav-be066e7bcbdce024acbbd9f172a2682a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

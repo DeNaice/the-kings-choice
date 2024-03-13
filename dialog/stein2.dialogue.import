@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cqqn24ofvbmpo"
+path="res://.godot/imported/stein2.dialogue-25e1309bb488887a90d5a96fcb0fa46b.tres"
+
+[deps]
+
+source_file="res://dialog/stein2.dialogue"
+dest_files=["res://.godot/imported/stein2.dialogue-25e1309bb488887a90d5a96fcb0fa46b.tres"]
+
+[params]
+
+defaults=true

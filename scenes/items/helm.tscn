@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv33rnhy7brng"]
+
+[ext_resource type="PackedScene" uid="uid://b62i0w3jri0vy" path="res://assets/models/weapons/Helm.glb" id="1_euira"]
+
+[node name="Helm" instance=ExtResource("1_euira")]

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://y8wed8wutej3"]
+
+[ext_resource type="Texture2D" uid="uid://dq2280cjrselp" path="res://assets/textures/bush_texture/T_Bush_temp_climate.png" id="1_pcwqe"]
+
+[resource]
+resource_name = "Material #25"
+cull_mode = 2
+albedo_color = Color(0.79059, 0.79059, 0.79059, 1)
+albedo_texture = ExtResource("1_pcwqe")
+metallic = 1.0
+roughness = 0.858579

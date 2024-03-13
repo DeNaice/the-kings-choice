@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://r441wp1xlifs"]
+
+[ext_resource type="Script" path="res://scripts/levels/Zuhause.cs" id="1_gj1kp"]
+[ext_resource type="PackedScene" uid="uid://bqm3vicypi6ox" path="res://scenes/interactable/TravelZone.tscn" id="2_d581s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_24qox"]
+size = Vector3(100, 2, 100)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8y3nv"]
+data = PackedVector3Array(-50, 1, 50, 50, 1, 50, -50, -1, 50, 50, 1, 50, 50, -1, 50, -50, -1, 50, 50, 1, -50, -50, 1, -50, 50, -1, -50, -50, 1, -50, -50, -1, -50, 50, -1, -50, 50, 1, 50, 50, 1, -50, 50, -1, 50, 50, 1, -50, 50, -1, -50, 50, -1, 50, -50, 1, -50, -50, 1, 50, -50, -1, -50, -50, 1, 50, -50, -1, 50, -50, -1, -50, 50, 1, 50, -50, 1, 50, 50, 1, -50, -50, 1, 50, -50, 1, -50, 50, 1, -50, -50, -1, 50, 50, -1, 50, -50, -1, -50, 50, -1, 50, 50, -1, -50, -50, -1, -50)
+
+[node name="Zuhause" type="Node3D"]
+script = ExtResource("1_gj1kp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_24qox")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_8y3nv")
+
+[node name="Spawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.99032, 4.55332, 3.67349)
+
+[node name="TravelZone2" parent="." instance=ExtResource("2_d581s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.9528, 3.60414, -32.1203)
+destination = "Hintereingang"
+departure = "Zuhause"
+
+[node name="TravelZone3" parent="." instance=ExtResource("2_d581s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.9079, 3.60414, -30.4108)
+destination = "Schloss"
+departure = "Zuhause"
+
+[node name="TravelZone" parent="." instance=ExtResource("2_d581s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77388, 4.29609, 23.3688)
+destination = "Waldweg"
+departure = "Zuhause"

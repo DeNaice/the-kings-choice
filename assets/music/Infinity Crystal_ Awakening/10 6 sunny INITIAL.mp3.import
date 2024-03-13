@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpisbcawcdo2i"
+path="res://.godot/imported/10 6 sunny INITIAL.mp3-26d2c0e58762224f2ccfd5de38b4d046.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Infinity Crystal_ Awakening/10 6 sunny INITIAL.mp3"
+dest_files=["res://.godot/imported/10 6 sunny INITIAL.mp3-26d2c0e58762224f2ccfd5de38b4d046.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
